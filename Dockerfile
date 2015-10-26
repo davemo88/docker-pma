@@ -11,7 +11,7 @@ RUN apt-get update \
 RUN mkdir /etc/nginx/ssl
 WORKDIR /etc/nginx/ssl
 RUN openssl req -x509 -nodes -newkey rsa:2048 -keyout pma.key -out pma.crt -days 365 \
-  -subj "/CN=core-2.databaste.me"
+  -subj "/CN=bogus.net"
 
 WORKDIR /usr/share/nginx/html/
 ENV PHPMYADMIN_VERSION 4.5.0.2
