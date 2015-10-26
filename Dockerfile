@@ -28,6 +28,3 @@ ADD supervisord.conf /etc/supervisor/conf.d/
 
 ADD cmd.sh /root/
 CMD /root/cmd.sh
-
-# CMD sed -i "s/localhost/$MYSQL_PORT_3306_TCP_ADDR/g" pma/config.inc.php \
-#   && /usr/bin/supervisord
