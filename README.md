@@ -8,7 +8,7 @@ build the image:
 ```
 create the container pointing to your mysql server:
 ```
- docker run --name pma -p 443:443 -e MYSQL_HOST=mysql_host -dpma
+ docker run --name pma -p 443:443 -e MYSQL_HOST=mysql_host -d pma
 ```
 or linked to a container running mysql:
 ```
