@@ -15,7 +15,7 @@ RUN openssl req -x509 -nodes -newkey rsa:2048 -keyout pma.key -out pma.crt -days
 
 ## reuse the default site directory
 WORKDIR /usr/share/nginx/html/
-ENV PHPMYADMIN_VERSION 4.5.0.2
+ENV PHPMYADMIN_VERSION 4.5.1
 RUN wget https://files.phpmyadmin.net/phpMyAdmin/${PHPMYADMIN_VERSION}/phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.gz \
      && tar -xzf phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.gz -C ./ \
      && rm phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.gz \
