@@ -16,3 +16,5 @@ or linked to a container running mysql:
 ```
  
 Assumes default mysql port
+
+I think it is broken for localhost too need to fix that
